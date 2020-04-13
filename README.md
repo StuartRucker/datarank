@@ -6,6 +6,8 @@ Make sure jupyter notebook is working, and then modify your jupyter config file 
 c.JupyterHub.tornado_settings = { 'headers': {'Content-Security-Policy': "frame-ancestors 'http://localhost:8080'", } }
 ```
 
+If you get an error regarding the cookie_secret file, see this thread: https://github.com/jupyterhub/jupyterhub/issues/1787
+
 Lastly run `python -m SimpleHTTPServer 8080` and `jupyterhub` at once and visit [http://localhost:8080](http://localhost:8080)
 
 
